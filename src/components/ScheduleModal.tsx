@@ -20,12 +20,12 @@ interface ScheduleModalProps {
   onDelete?: (id: string, guestPIN?: string) => Promise<void>;
 }
 
-// Generate 30-minute intervals from 09:00 to 18:00
+// Generate 30-minute intervals from 09:00 to 24:00
 const TIME_OPTIONS: string[] = [];
-for (let hour = 9; hour <= 18; hour++) {
+for (let hour = 9; hour <= 24; hour++) {
   const hStr = hour.toString().padStart(2, '0');
   TIME_OPTIONS.push(`${hStr}:00`);
-  if (hour < 18) {
+  if (hour < 24) {
     TIME_OPTIONS.push(`${hStr}:30`);
   }
 }

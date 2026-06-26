@@ -29,9 +29,9 @@ function formatDateString(year: number, month: number, day: number): string {
   return `${year}-${mStr}-${dStr}`;
 }
 
-// Time slots to display in agenda (30-minute blocks from 09:00 to 18:00)
+// Time slots to display in agenda (30-minute blocks from 09:00 to 24:00)
 const AGENDA_SLOTS: { start: string; end: string }[] = [];
-for (let hour = 9; hour < 18; hour++) {
+for (let hour = 9; hour < 24; hour++) {
   const hStr = hour.toString().padStart(2, '0');
   const hNextStr = (hour + 1).toString().padStart(2, '0');
   
