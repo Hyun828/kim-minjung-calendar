@@ -1,0 +1,6 @@
+{
+  "name": "김민정 약속앱",
+  "description": "호스트와 게스트가 각자의 권한으로 간편하게 일정을 확인, 조율 및 관리하는 스마트 웹 캘린더 서비스",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
