@@ -14,7 +14,7 @@ import { Schedule } from './src/types';
 dotenv.config();
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const DB_FILE = path.join(process.cwd(), 'schedules.json');
 const HOST_PASSWORD = process.env.HOST_PASSWORD || 'admin1234';
 
